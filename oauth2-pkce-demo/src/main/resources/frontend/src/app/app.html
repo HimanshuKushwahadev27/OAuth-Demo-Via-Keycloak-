@@ -1,0 +1,7 @@
+<button *ngIf="!isLoggedIn" (click)="login()">Login</button>
+
+<p *ngIf="isLoggedIn">Refresh the browser after login</p>
+
+<h1 *ngIf="isLoggedIn">{{ text }}</h1>
+
+<button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
